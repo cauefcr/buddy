@@ -89,7 +89,7 @@ func gameFromGif(path string) (*Game, int, int) {
 
 func main() {
 	if len(os.Args) < 2 {
-		log.Fatal("Usage: ./jiffer <gif>")
+		log.Fatal("Usage: ./buddy <gif>")
 	}
 	game, w, h := gameFromGif(os.Args[1])
 	vw, vh := ebiten.ScreenSizeInFullscreen()
